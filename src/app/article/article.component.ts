@@ -10,9 +10,12 @@ export class ArticleComponent {
   title: string;
   @Input()
   content: string;
+  @Input()
+  comments: Array<any>
 
   constructor() {
     this.title = 'my blog';
     this.content = 'hello world';
+    this.comments = []
   }
 }

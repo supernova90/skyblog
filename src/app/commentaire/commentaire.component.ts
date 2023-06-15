@@ -7,16 +7,13 @@ import { Component, Input } from '@angular/core';
 })
 export class CommentaireComponent {
   @Input()
-  autheur: string;
+  autheur: string
   @Input()
-  content: string;
+  content : string
 
-constructor() {
+  constructor() {
+    this.autheur= ''
+    this.content= ''
 
-  this.autheur = 'le monsieur';
-  this.content = 'good';
-
-
-
-}
+  }
 }

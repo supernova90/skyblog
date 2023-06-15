@@ -1,6 +1,8 @@
 <div>
-    <h1>{{ title }}</h1>
-    <p>{{ content }}</p>
-  </div>
+  <h1>{{ title }}</h1>
+  <p>{{ content }}</p>
+</div>
 
-  
+<div *ngFor="let comment of comments">
+  <app-commentaire [autheur]="comment.autheur" [content]="comment.content"></app-commentaire>
+</div>

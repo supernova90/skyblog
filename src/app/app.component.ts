@@ -11,10 +11,10 @@ export class AppComponent {
 
   constructor() {
     this.articles = [
-      { title: 'blog1', content: 'hello1' },
-      { title: 'blog2', content: 'hello2' },
-      { title: 'blog3', content: 'hello3' },
-      { title: 'blog4', content: 'hello4' }
+      { title: 'blog1', content: 'hello1', comments: [{autheur: 'monsieur1', content: 'good1'}]},
+      { title: 'blog2', content: 'hello2', comments: [{autheur: 'monsieur2', content: 'good2'}]},
+      { title: 'blog3', content: 'hello3', comments: [{autheur: 'monsieur1', content: 'good1'}]},
+      { title: 'blog4', content: 'hello4', comments: [{autheur: 'monsieur1', content: 'good1'}]}
     ];
   }
 }
